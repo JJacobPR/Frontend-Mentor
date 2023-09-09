@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Poppins-EB";
+  src: url(../assets/fonts/Poppins-ExtraBold.ttf);
+}
+
+.dateOutput {
+  font-size: clamp(3.5rem, 1.9526rem + 4.0526vw, 6.5rem);
+  font-style: italic;
+  font-weight: bolder;
+  line-height: 110%;
+  letter-spacing: -0.13rem;
+}
+
+.dateOutput .number span {
+  color: var(--Purple, #854dff);
+}
+
+.dateOutput > p,
+span {
+  font-family: "Poppins-EB";
+}
