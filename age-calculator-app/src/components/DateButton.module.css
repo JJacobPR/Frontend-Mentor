@@ -10,12 +10,22 @@
   padding: 1.5rem;
   border-radius: 13.5rem;
   background: var(--Purple, #854dff);
+
+  cursor: pointer;
+}
+.dateButton img:hover {
+  background: var(--Black, #151515);
 }
 
 .dateButton hr {
   width: 100%;
   align-self: center;
   border: 0.0625rem solid #dcdcdc;
+}
+
+.dateButton button {
+  background: none;
+  border: none;
 }
 
 .dateButton .line {

@@ -2,9 +2,18 @@ import styles from "./DateInput.module.css";
 
 const DateInput = (props) => {
   return (
-    <div className={styles.dateInput}>
-      <label for={props.name}>{props.name}</label>
-      <input name={props.name} type="text" defaultValue={props.defaultValue}></input>
+    <div className={`${styles.dateInput} ${props.hasError ? styles.error : ""}`}>
+      <label htmlFor={props.name}>{props.name}</label>
+      <input
+        onChange={(e) => {
+          props.update(e.target.value);
+        }}
+        name={props.name}
+        type="text"
+        placeholder={props.defaultValue}
+        required
+      />
+      {props.hasError && <p>Must be a valid {props.name}</p>}
     </div>
   );
 };

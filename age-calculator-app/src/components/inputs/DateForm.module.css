@@ -4,3 +4,7 @@
   gap: 2rem;
   align-self: stretch;
 }
+
+.dateForm {
+  width: 100%;
+}

@@ -18,6 +18,8 @@
   font-size: clamp(1.25rem, 0.0364rem + 2.1818vw, 2rem);
   font-weight: 700;
   letter-spacing: 0.02rem;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
 
   display: flex;
   width: 10rem;
@@ -28,6 +30,18 @@
 
   border-radius: 0.5rem;
   border: 1px solid var(--Line, #dcdcdc);
+}
+
+.error {
+  color: var(--Red, #ff5959);
+}
+
+.error input {
+  border: 1px solid #ff5959;
+}
+
+.error label {
+  color: var(--Red, #ff5959);
 }
 
 @media screen and (max-width: 890px) {

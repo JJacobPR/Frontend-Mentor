@@ -1,16 +1,16 @@
 import styles from "./DateOutput.module.css";
 
-const DateOutput = () => {
+const DateOutput = (props) => {
   return (
     <div className={styles.dateOutput}>
       <p className={styles.number}>
-        <span>38</span> years
+        <span>{props.calcDate.year}</span> years
       </p>
       <p className={styles.number}>
-        <span>3</span> months
+        <span>{props.calcDate.month}</span> months
       </p>
       <p className={styles.number}>
-        <span>123</span> days
+        <span>{props.calcDate.day}</span> days
       </p>
     </div>
   );
