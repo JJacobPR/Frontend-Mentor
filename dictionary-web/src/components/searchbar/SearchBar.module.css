@@ -1,0 +1,25 @@
+.searchBar {
+  position: relative;
+}
+
+.searchBar input {
+  border-radius: 1rem;
+  padding: 1rem;
+  background: var(--gray-0);
+  font-size: var(--font-header-small);
+  font-weight: 700;
+  border: none;
+  width: 100%;
+}
+
+.searchBar input:focus {
+  outline: none;
+  border: 3px solid var(--purple);
+}
+
+.searchBar img {
+  position: absolute;
+  background-color: white;
+  right: 1.5rem;
+  top: calc(5% + var(--font-header-small));
+}

@@ -1,0 +1,35 @@
+.searchItemContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.searchItemContent header {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+
+.searchItemContent h3 {
+  font-size: var(--font-header-mid);
+  font-style: italic;
+}
+
+.searchItemContent h4 {
+  font-size: var(--font-header-small);
+  color: var(--gray-2);
+  font-weight: 400;
+}
+
+.searchItemContent hr {
+  border: none;
+  border-top: 0.063rem solid var(--gray-1);
+  width: 100%;
+}
+
+.searchItemContent ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

@@ -1,0 +1,19 @@
+.navigation {
+  font-family: var(--font-regular);
+  color: var(--purple);
+  display: flex;
+  padding-top: 6%;
+  justify-content: space-between;
+}
+
+.navigation .right {
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+  gap: 1rem;
+}
+
+.navigation .line {
+  border-left: 0.063rem solid var(--gray-1);
+  height: 100%;
+}

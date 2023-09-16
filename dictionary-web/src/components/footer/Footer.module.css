@@ -1,0 +1,30 @@
+.footerMain {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 3rem;
+  font-size: var(--font-body-small);
+}
+
+.footerMain hr {
+  border: none;
+  border-top: 0.063rem solid var(--gray-1);
+}
+
+.footerMain h4 {
+  color: var(--gray-2);
+  font-weight: 400;
+  text-decoration-line: underline;
+}
+
+.footerMain a {
+  padding-top: 0.5rem;
+  display: inline-block;
+  text-decoration-line: underline;
+  color: var(--gray-4);
+}
+
+.footerMain a::after {
+  content: url("../../assets/images/icon-new-window.svg");
+  margin-left: 0.375rem;
+}

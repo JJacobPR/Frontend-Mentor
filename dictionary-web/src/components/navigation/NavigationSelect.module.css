@@ -1,0 +1,11 @@
+.dropdown {
+  display: flex;
+  gap: 1rem;
+}
+
+.dropdown select {
+  background-color: white;
+  appearance: none;
+  border: none;
+  font-weight: 700;
+}

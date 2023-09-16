@@ -1,0 +1,22 @@
+.searchItemListElement {
+  display: flex;
+  position: relative;
+  align-self: flex-end;
+  width: 90%;
+  font-size: var(--font-body-mid);
+}
+
+.searchItemListElement::before {
+  content: "\2022";
+  color: var(--purple);
+  font-weight: bold;
+  position: absolute;
+  left: -1.5rem;
+}
+
+.example {
+  display: flex;
+  align-self: flex-end;
+  color: var(--gray-2);
+  width: 90%;
+}

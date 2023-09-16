@@ -1,0 +1,21 @@
+.itemHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.itemHeader h1 {
+  font-size: var(--font-header);
+  font-weight: 700;
+}
+
+.itemHeader h3 {
+  font-size: var(--font-header-mid);
+  color: var(--purple);
+  margin-top: 5%;
+  font-weight: 400;
+}
+
+.itemHeader img {
+  width: clamp(2.813rem, 2.1528rem + 2.8169vw, 4.688rem);
+  height: auto;
+}
