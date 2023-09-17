@@ -14,12 +14,22 @@
 
 .searchBar input:focus {
   outline: none;
-  border: 3px solid var(--purple);
+  border: 0.125rem solid var(--purple);
 }
 
 .searchBar img {
   position: absolute;
-  background-color: white;
+  background-color: var(--gray-0);
   right: 1.5rem;
   top: calc(5% + var(--font-header-small));
+  cursor: pointer;
+}
+
+.error {
+  border: 0.125rem solid var(--red) !important;
+}
+
+.errorP {
+  color: var(--red);
+  padding-top: 0.5rem;
 }

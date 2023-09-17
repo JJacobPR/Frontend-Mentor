@@ -15,7 +15,17 @@
   font-weight: 400;
 }
 
-.itemHeader img {
+.itemHeader svg {
   width: clamp(2.813rem, 2.1528rem + 2.8169vw, 4.688rem);
+  cursor: pointer;
   height: auto;
+}
+
+.itemHeader svg g:hover path {
+  fill: white;
+}
+
+.itemHeader svg g:hover circle {
+  fill: #a445ed !important;
+  opacity: 1;
 }

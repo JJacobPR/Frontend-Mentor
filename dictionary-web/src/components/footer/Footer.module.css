@@ -15,6 +15,8 @@
   color: var(--gray-2);
   font-weight: 400;
   text-decoration-line: underline;
+  display: inline-block;
+  padding-right: 1rem;
 }
 
 .footerMain a {

@@ -1,11 +1,11 @@
 import { Fragment } from "react";
 import styles from "./SearchItemListElement.module.css";
 
-const SearchItemListElement = () => {
+const SearchItemListElement = (props) => {
   return (
     <Fragment>
-      <li className={styles.searchItemListElement}>(etc.) A set of keys used to operate eys used to operate a typewriter, computer etc.</li>
-      <p className={styles.example}>Example</p>
+      <li className={styles.searchItemListElement}>{props.def.definition}</li>
+      <p className={styles.example}>{props.def.example && props.def.example}</p>
     </Fragment>
   );
 };

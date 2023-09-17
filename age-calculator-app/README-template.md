@@ -7,9 +7,7 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-- [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
 - [Author](#author)
 
 ## Overview
@@ -38,3 +36,8 @@ Users should be able to:
 - CSS Modules
 - Mobile-first workflow
 - React
+
+## Author
+
+- Linkedin - [Jakub Janicki](https://www.linkedin.com/in/jakub-janicki-62229b244/)
+- Frontend Mentor - [Frontend Mentor](https://www.frontendmentor.io/profile/JJacobPR)

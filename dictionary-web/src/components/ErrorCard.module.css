@@ -1,0 +1,12 @@
+.errorCard {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  gap: 2rem;
+  padding-top: 10rem;
+}
+
+.errorCard {
+  height: 100vh;
+}

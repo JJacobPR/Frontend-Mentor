@@ -3,7 +3,6 @@ import styles from "./NavigationSelect.module.css";
 
 const NavigationSelect = () => {
   const selectFont = (e) => {
-    // updateFont(e.target.value);
     document.documentElement.style.setProperty("--font-regular", e.target.value);
   };
 
