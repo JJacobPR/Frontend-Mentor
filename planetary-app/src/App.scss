@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+$background-main: #070724;
+
+.main-wrapper {
+  background-image: url("./assets/images/background-stars.svg");
+  background-color: $background-main;
+  min-height: 100vh;
+}
