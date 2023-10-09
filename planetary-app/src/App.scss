@@ -1,13 +1,20 @@
+@use "./assets//partials" as p;
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-$background-main: #070724;
-
-.main-wrapper {
+.background-wrapper {
   background-image: url("./assets/images/background-stars.svg");
-  background-color: $background-main;
+  background-color: p.$background-main;
   min-height: 100vh;
+}
+
+.content-wrapper {
+  max-width: 1440px;
+  position: absolute;
+  inset: 0;
+  margin: auto;
 }

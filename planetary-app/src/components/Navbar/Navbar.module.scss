@@ -1,0 +1,43 @@
+@use "../../assets//partials" as p;
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  padding: 2rem;
+
+  @media only screen and (max-width: 810px) {
+    justify-content: center;
+  }
+}
+
+.headerPlanets {
+  color: #fff;
+  font-family: Antonio;
+  font-size: 1.75rem;
+  letter-spacing: -1.05px;
+  text-transform: uppercase;
+}
+
+.planets {
+  display: flex;
+  gap: 2rem;
+  @include p.header4;
+}
+
+.planets > h4 {
+  opacity: 0.75;
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.navbarLine {
+  border: none;
+  border-top: 0.063rem solid #fff;
+  opacity: 0.25;
+  width: 100%;
+}
