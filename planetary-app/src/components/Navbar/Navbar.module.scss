@@ -27,9 +27,11 @@
   @include p.header4;
 }
 
-.planets > h4 {
+.planets > .link {
   opacity: 0.75;
   cursor: pointer;
+  color: white;
+  text-decoration: none;
   &:hover {
     opacity: 1;
   }

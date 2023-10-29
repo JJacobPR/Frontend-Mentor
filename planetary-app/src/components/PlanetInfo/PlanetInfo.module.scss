@@ -1,0 +1,23 @@
+@use "../../assets/partials/" as p;
+
+.planetInfoSection {
+  width: 80%;
+  margin-top: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.planetInfoImageSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.planetInfo {
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

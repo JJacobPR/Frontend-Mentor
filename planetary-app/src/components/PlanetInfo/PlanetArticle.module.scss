@@ -1,0 +1,29 @@
+@use "../../assets/partials/" as p;
+
+.planetArticle {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  h1 {
+    @include p.header1;
+  }
+
+  article {
+    @include p.bodyText;
+  }
+
+  p {
+    @include p.bodyText;
+    opacity: 0.5;
+  }
+
+  p a {
+    text-decoration-line: underline;
+    color: white;
+  }
+
+  p a img {
+    padding-left: 0.25rem;
+  }
+}

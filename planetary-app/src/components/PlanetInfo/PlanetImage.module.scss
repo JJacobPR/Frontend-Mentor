@@ -1,0 +1,19 @@
+.planetPhotoWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.earth {
+  max-width: 50%;
+}
+
+.planetPhotoWrapper img {
+  width: 40%;
+}
+
+.subImage {
+  max-width: 20%;
+  position: absolute;
+  bottom: -35%;
+}

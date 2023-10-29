@@ -1,0 +1,36 @@
+@use "../../assets/partials/" as p;
+
+.planetButtons {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  button {
+    @include p.header3;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 700;
+    padding-left: 5rem;
+    letter-spacing: 2.571px;
+    height: 3rem;
+    cursor: pointer;
+    background: none;
+    border: solid 1px rgba(255, 255, 255, 0.2);
+    position: relative;
+  }
+
+  @for $i from 1 through 3 {
+    button:nth-child(#{$i})::before {
+      content: "0#{$i}";
+      position: absolute;
+      left: 2rem;
+      top: 0.75rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0.2;
+    }
+  }
+}

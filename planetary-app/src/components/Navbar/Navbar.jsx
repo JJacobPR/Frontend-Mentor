@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import styles from "./Navbar.module.scss";
+import { Link } from "react-router-dom";
 
 const Navbar = (props) => {
   return (
@@ -7,8 +8,10 @@ const Navbar = (props) => {
       <nav className={styles.navbar}>
         <h2 className={styles.headerPlanets}>The Planets</h2>
         <div className={styles.planets}>
-          {props.planetNames.map((name) => (
-            <h4>{name}</h4>
+          {props.planetNames.map((name, index) => (
+            <Link key={index} className={styles.link} to={`planets/${name}`}>
+              {name}
+            </Link>
           ))}
         </div>
       </nav>
