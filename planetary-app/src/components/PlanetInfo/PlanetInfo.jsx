@@ -1,7 +1,8 @@
 import PlanetArticle from "./PlanetArticle.jsx";
-import PlanetButtons from "./PlanetButtons.jsx";
+import PlanetButtons from "./PlanetButtons/PlanetButtons.jsx";
 import PlanetImage from "./PlanetImage.jsx";
 import PlanetSubInfo from "./PlanetSubInfo/PlanetSubInfo.jsx";
+import PlanetButtonsTop from "./PlanetButtons/PlanetButtonsTop.jsx";
 import data from "../../assets/data/data.json";
 import styles from "./PlanetInfo.module.scss";
 import { useState } from "react";
@@ -37,10 +38,11 @@ const PlanetInfo = () => {
   return (
     <section className={styles.planetInfoSection}>
       <div className={styles.planetInfoImageSection}>
-        <PlanetImage showGeo={showGeo} showInternal={showInternal} fileSub={planet.images.geology.split("/").pop().split(".").slice(0, -1).join(".")} fileInt={planet.images.internal.split("/").pop().split(".").slice(0, -1).join(".")} fileMain={planet.images.planet.split("/").pop().split(".").slice(0, -1).join(".")} />
+        <PlanetButtonsTop name={planet.name} className={styles.planetInfo} setOverview={setOverview} setStructure={setStructure} setGeology={setGeology} />
+        <PlanetImage name={planet.name} showGeo={showGeo} showInternal={showInternal} fileSub={planet.images.geology.split("/").pop().split(".").slice(0, -1).join(".")} fileInt={planet.images.internal.split("/").pop().split(".").slice(0, -1).join(".")} fileMain={planet.images.planet.split("/").pop().split(".").slice(0, -1).join(".")} />
         <div className={styles.planetInfo}>
           <PlanetArticle name={planet.name} content={articleData} />
-          <PlanetButtons setOverview={setOverview} setStructure={setStructure} setGeology={setGeology} />
+          <PlanetButtons name={planet.name} className={styles.planetInfo} setOverview={setOverview} setStructure={setStructure} setGeology={setGeology} />
         </div>
       </div>
       <PlanetSubInfo radius={planet.radius} revolution={planet.revolution} rotation={planet.rotation} temperature={planet.temperature} />

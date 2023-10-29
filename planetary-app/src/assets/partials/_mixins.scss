@@ -36,3 +36,10 @@
   letter-spacing: 0.0625rem;
   text-transform: uppercase;
 }
+
+@mixin navbarLine() {
+  border: none;
+  border-top: 0.063rem solid #fff;
+  opacity: 0.25;
+  width: 100%;
+}

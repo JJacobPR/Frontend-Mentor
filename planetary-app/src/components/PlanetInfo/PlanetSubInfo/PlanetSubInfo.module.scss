@@ -1,7 +1,7 @@
 @use "../../../assets/partials/" as p;
 
 .subInfo {
-  margin-top: 3rem;
+  margin-top: 7rem;
   margin-bottom: 1rem;
   display: flex;
   width: 100%;
@@ -19,5 +19,24 @@
 
   h4 {
     @include p.header4;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    div {
+      width: 23%;
+      justify-content: center;
+      gap: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: 680px) {
+    flex-direction: column;
+    gap: 1rem;
+    div {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 }

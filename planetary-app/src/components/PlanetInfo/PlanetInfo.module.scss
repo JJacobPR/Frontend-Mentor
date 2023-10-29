@@ -7,12 +7,26 @@
   flex-direction: column;
   justify-content: space-between;
   align-self: center;
+
+  @media only screen and (max-width: 1000px) {
+    width: 95%;
+    margin-top: 10rem;
+  }
+
+  @media only screen and (max-width: 680px) {
+    margin-top: 1rem;
+  }
 }
 
 .planetInfoImageSection {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+    gap: 5rem;
+  }
 }
 
 .planetInfo {
@@ -20,4 +34,15 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  @media only screen and (max-width: 1000px) {
+    flex-direction: row;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  @media only screen and (max-width: 680px) {
+    justify-content: center;
+    text-align: center;
+  }
 }

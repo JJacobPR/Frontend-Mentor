@@ -8,8 +8,16 @@
   row-gap: 2rem;
   padding: 2rem;
 
-  @media only screen and (max-width: 810px) {
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
     justify-content: center;
+  }
+
+  @media only screen and (max-width: 680px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    row-gap: 0rem;
   }
 }
 
@@ -35,11 +43,119 @@
   &:hover {
     opacity: 1;
   }
+
+  @media only screen and (max-width: 680px) {
+    display: none;
+  }
 }
 
 .navbarLine {
-  border: none;
-  border-top: 0.063rem solid #fff;
-  opacity: 0.25;
+  @include p.navbarLine;
+}
+
+.navHamburger img {
+  cursor: pointer;
+
+  @media only screen and (min-width: 681px) {
+    display: none;
+  }
+}
+
+.linksHam {
+  height: auto;
   width: 100%;
+  z-index: 10;
+  padding-bottom: 15rem;
+  background: #070724;
+  top: 5rem;
+  left: 0;
+  padding-top: 1.25rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+
+  @media only screen and (min-width: 681px) {
+    display: none;
+  }
+}
+
+.linksHam > .linkHam {
+  @include p.header2;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  &:hover {
+    opacity: 1;
+  }
+
+  .innerLink {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-left: 2rem;
+  }
+
+  hr {
+    @include p.navbarLine;
+  }
+
+  .linkLine {
+    position: absolute;
+    bottom: -1rem;
+  }
+
+  img {
+    height: 50%;
+    padding-right: 2rem;
+  }
+}
+
+@mixin circle {
+  padding: 0.875rem;
+  border-radius: 50%;
+}
+
+.mercury {
+  @include circle();
+  background: #419ebb;
+}
+
+.venus {
+  @include circle();
+  background: #eda249;
+}
+
+.earth {
+  @include circle();
+  background: #6d2ed5;
+}
+
+.mars {
+  @include circle();
+  background: #d14c32;
+}
+
+.jupiter {
+  @include circle();
+  background: #d83a34;
+}
+
+.saturn {
+  @include circle();
+  background: #cd5120;
+}
+
+.uranus {
+  @include circle();
+  background: #1ec1a2;
+}
+
+.neptune {
+  @include circle();
+  background: #2d68f0;
 }
