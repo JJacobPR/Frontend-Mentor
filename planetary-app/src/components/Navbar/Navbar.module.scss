@@ -53,12 +53,14 @@
   @include p.navbarLine;
 }
 
-.navHamburger img {
-  cursor: pointer;
-
+.navHamburger {
   @media only screen and (min-width: 681px) {
     display: none;
   }
+}
+
+.navHamburger img {
+  cursor: pointer;
 }
 
 .linksHam {
