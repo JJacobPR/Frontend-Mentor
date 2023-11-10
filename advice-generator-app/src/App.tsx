@@ -20,7 +20,6 @@ function App() {
       if (!response.ok) throw new Error("Response came with an error");
 
       const data = await response.json();
-      console.log(data);
 
       updateHint(data.slip.advice);
       updateHintId(`#${data.slip.id}`);
