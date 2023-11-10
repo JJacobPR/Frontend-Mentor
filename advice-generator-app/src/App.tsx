@@ -8,7 +8,7 @@ const randomNumber = (): number => {
 };
 
 function App() {
-  const [hint, updateHint] = useState("Press the the button for a hint");
+  const [hint, updateHint] = useState("Press the button for a hint");
   const [hintId, updateHintId] = useState("#00");
 
   const getHint = async (event: React.MouseEvent<HTMLImageElement, MouseEvent>) => {
