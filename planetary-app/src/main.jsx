@@ -1,16 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import PlanetView from "./views/PlanetView.jsx";
 import HomeView from "./views/HomeView.jsx";
-import PlanetInfo, { planetLoader } from "./components/PlanetInfo/PlanetInfo.jsx";
+import PlanetInfo from "./components/PlanetInfo/PlanetInfo.jsx";
+import planetLoader from "./components/loaders/planetLoader.js";
+import "./main.css";
 
 const router = createBrowserRouter([
+  { path: "/", element: <HomeView /> },
   {
-    path: "/",
-    element: <HomeView />,
+    path: "/planets",
+    element: <PlanetView />,
     children: [
       {
-        path: "planets/:planetName",
+        path: "planet/:planetName",
         element: <PlanetInfo />,
         loader: planetLoader,
       },

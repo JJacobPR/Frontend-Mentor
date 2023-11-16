@@ -3,15 +3,9 @@ import PlanetButtons from "./PlanetButtons/PlanetButtons.jsx";
 import PlanetImage from "./PlanetImage.jsx";
 import PlanetSubInfo from "./PlanetSubInfo/PlanetSubInfo.jsx";
 import PlanetButtonsTop from "./PlanetButtons/PlanetButtonsTop.jsx";
-import data from "../../assets/data/data.json";
 import styles from "./PlanetInfo.module.scss";
 import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
-
-export const planetLoader = (obj) => {
-  const planetAr = data.filter((planet) => planet.name === obj.params.planetName);
-  return planetAr[0];
-};
 
 const PlanetInfo = () => {
   const planet = useLoaderData();

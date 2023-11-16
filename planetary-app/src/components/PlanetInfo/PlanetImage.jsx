@@ -4,7 +4,6 @@ import styles from "./PlanetImage.module.scss";
 import { useEffect } from "react";
 
 const PlanetImage = (props) => {
-  let planetStyle;
   let image;
 
   if (props.showInternal) {

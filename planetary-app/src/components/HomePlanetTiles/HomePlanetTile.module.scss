@@ -1,0 +1,27 @@
+@use "../../assets//partials/" as p;
+
+.planetTile {
+  max-width: 14rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20%;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 2px 1px 10px rgba(255, 255, 255, 0.3);
+
+  img {
+    max-width: 10rem;
+  }
+
+  h3 {
+    @include p.header3;
+    font-size: 1rem;
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+}
