@@ -21,7 +21,7 @@ const Navbar = (props) => {
         <h2 className={styles.headerPlanets}>The Planets</h2>
         <div className={styles.planets}>
           {props.planetNames.map((name, index) => (
-            <Link key={index} className={styles.link} to={`planets/planet/${name}`}>
+            <Link key={index} className={styles.link} to={`/planets/planet/${name}`}>
               {name}
             </Link>
           ))}
