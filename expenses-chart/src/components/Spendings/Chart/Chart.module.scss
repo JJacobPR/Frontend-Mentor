@@ -1,0 +1,45 @@
+.chart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  p {
+    text-align: center;
+    font-size: 0.937rem;
+    font-weight: 400;
+  }
+}
+
+.bar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  div {
+    background: hsl(10, 79%, 65%);
+    width: 2.5rem;
+    border-radius: 0.25rem;
+  }
+
+  .bar-1 {
+    height: 100px;
+  }
+  .bar-2 {
+    height: 80px;
+  }
+  .bar-3 {
+    height: 70px;
+  }
+  .bar-4 {
+    height: 50px;
+  }
+  .bar-5 {
+    height: 35px;
+  }
+  .bar-6 {
+    height: 25px;
+  }
+  .bar-7 {
+    height: 10px;
+  }
+}
