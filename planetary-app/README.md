@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://main--rococo-tiramisu-b6589c.netlify.app/)
+- Live Site URL: [Live site URL](https://main--rococo-tiramisu-b6589c.netlify.app/)
 
 ## Built with
 

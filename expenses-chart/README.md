@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://superlative-choux-f5e042.netlify.app/)
+- Live Site URL: [Live site URL](https://superlative-choux-f5e042.netlify.app/)
 
 ### Built with
 
