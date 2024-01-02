@@ -6,7 +6,7 @@ const Balance = () => {
     <div className={balanceStyles["balance-section"]}>
       <div className={balanceStyles["balance-text"]}>
         <h4>My Balance</h4>
-        <h2>921.48$</h2>
+        <h2>$921.48</h2>
       </div>
       <div>
         <img src={circlesSVG} />
